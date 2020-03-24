@@ -17,7 +17,7 @@
         CrushFTP9 is an extremely powerful, easy to use FTP solution.&#xD;
     </Description>
   <Networking>
-    <Mode>	
+  	<Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8080</HostPort>
