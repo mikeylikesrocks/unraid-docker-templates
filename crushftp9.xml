@@ -57,6 +57,7 @@
       <ContainerDir>/unraidshare</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    </Data>
   <Config Name="CrushFTP9 Home" Target="/var/opt/CrushFTP9_PC" Default="/mnt/user/appdata/crushftp9/" Mode="rw" Description="CrushFTP Home/Installation Directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/crushftp9</Config>
   <Config Name="unRAID Share Path" Target="/unraidshare" Default="/mnt/user/" Mode="rw" Description="Container Path: /unraid" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="Crush HTTP Port 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
