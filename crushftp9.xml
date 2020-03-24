@@ -3,7 +3,7 @@
   <Name>crushftp_9</Name>
   <Repository>mdschaefer/crushftp_9</Repository>
   <Registry/>
-  <Network>br0</Network>
+  <Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
@@ -26,7 +26,7 @@
         CrushFTP9 is an extremely powerful, easy to use FTP solution.&#xD;
     </Description>
   <Networking>
-    <Mode>br0</Mode>
+    <Mode>
     <Publish>
       <Port>
         <HostPort>8080</HostPort>
