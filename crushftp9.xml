@@ -14,7 +14,7 @@
   <Category>Network:FTP Network:Other Productivity:Tools Network:Web</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/mikeylikesrocks/unraid-docker-templates/master/crushftp9.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/mikeylikesrocks/docker-crushftp/master/icon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/mikeylikesrocks/docker-crushftp/master/icon.png</Icon>
   <Description>&#xD;
         CrushFTP9 is an extremely powerful, easy to use FTP solution.&#xD;
     </Description>
