@@ -2,6 +2,7 @@
 <Container version="2">
   <Name>crushftp9</Name>
   <Repository>mdschaefer/crushftp9</Repository>
+  <Registry>https://hub.docker.com/repository/docker/mdschaefer/crushftp9</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
