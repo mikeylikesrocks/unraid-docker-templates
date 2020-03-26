@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>crushftp9</Name>
-  <Repository>mdschaefer/crushftp9</Repository>
+  <Repository>mdschaefer/unraid-crushftp9</Repository>
   <Registry>https://hub.docker.com/repository/docker/mdschaefer/crushftp9</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
   <Support>http://www.crushftp.com/support.html</Support>
-  <Project>https://github.com/mikeylikesrocks/docker-crushftp</Project>
+  <Project>https://github.com/mikeylikesrocks/unraid-crushftp9</Project>
   <Overview>&#xD;
         CrushFTP9 is an extremely powerful, easy to use FTP solution that can use sftp, ftp, webDav, and http.&#xD;
     </Overview>
   <Category>Network:FTP Network:Other Productivity:Tools Network:Web</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/mikeylikesrocks/unraid-docker-templates/master/crushftp9.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/mikeylikesrocks/docker-crushftp/master/icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/mikeylikesrocks/unraid-docker-templates/master/crushftp9-icon.png</Icon>
   <Description>&#xD;
         CrushFTP9 is an extremely powerful, easy to use FTP solution.&#xD;
     </Description>
@@ -27,12 +27,12 @@
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>443</HostPort>
+        <HostPort>9443</HostPort>
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>21</HostPort>
+        <HostPort>9921</HostPort>
         <ContainerPort>21</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -60,11 +60,42 @@
       <Mode>rw</Mode>
     </Volume>
     </Data>
-  <Config Name="CrushFTP9 Home" Target="/var/opt/CrushFTP9_PC" Default="/mnt/user/appdata/crushftp9/" Mode="rw" Description="CrushFTP Home/Installation Directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/crushftp9</Config>
+ <Environment>
+ 	<Variable>
+      <Value>crushadmin</Value>
+      <Name>CRUSHADMIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>crusha9password</Value>
+      <Name>CRUSHPASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>crushadmin</Value>
+      <Name>CRUSHADMIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+ </Environment>   
+  <Config Name="CrushFTP9 config files" Target="/var/opt/CrushFTP9_PC" Default="/mnt/user/appdata/crushftp9/" Mode="rw" Description="CrushFTP Home/Installation Directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/crushftp9</Config>
   <Config Name="unRAID Share Path" Target="/unraidshare" Default="/mnt/user/" Mode="rw" Description="Container Path: /unraidshare" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="Crush HTTP Port 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="HTTPS Port" Target="443" Default="443" Mode="tcp" Description="Crush HTTPS Port " Type="Port" Display="always" Required="false" Mask="false">443</Config>
-  <Config Name="FTP Port" Target="21" Default="21" Mode="tcp" Description="Crush FTP Port" Type="Port" Display="always" Required="false" Mask="false">21</Config>
+  <Config Name="HTTPS Port" Target="9443" Default="9443" Mode="tcp" Description="Crush HTTPS Port " Type="Port" Display="always" Required="false" Mask="false">443</Config>
+  <Config Name="FTP Port" Target="9921" Default="9921" Mode="tcp" Description="Crush FTP Port" Type="Port" Display="always" Required="false" Mask="false">21</Config>
   <Config Name="HTTP port 9090" Target="9090" Default="9090" Mode="tcp" Description="Crush port 9090 " Type="Port" Display="always" Required="false" Mask="false">9090</Config>
   <Config Name="HTTP port 2222" Target="2222" Default="2222" Mode="tcp" Description="Crush port 2222 " Type="Port" Display="always" Required="false" Mask="false">2222</Config>
+  <Config Name="Crushftp admin user" Target="CRUSHADMIN" Default="crushadmin" Mode="" Description="Admin user for Crushftp " Type="Variable" Display="always" Required="true" Mask="false">crushadmin</Config>
+  <Config Name="Crushftp admin user password" Target="CRUSHPASSWORD" Default="crush9password" Mode="" Description="Password for Admin user " Type="Variable" Display="always" Required="true" Mask="false">crush9password</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions.  Do not change unless you know what you're doing." Type="Variable" Display="advanced-hide" Required="true" Mask="false">100</Config>
 </Container>
