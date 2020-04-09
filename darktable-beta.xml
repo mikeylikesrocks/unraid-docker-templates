@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>darktable-beta</Name>
-  <Repository>mdschaefer/darktable:beta</Repository>
+  <Name>darktable</Name>
+  <Repository>mdschaefer/darktable</Repository>
   <Registry>https://hub.docker.com/repository/docker/mdschaefer/darktable</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
