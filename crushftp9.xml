@@ -16,16 +16,8 @@
   <TemplateURL>https://raw.githubusercontent.com/mikeylikesrocks/unraid-docker-templates/master/crushftp9.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/mikeylikesrocks/unraid-docker-templates/master/crushftp9-icon.png</Icon>
   <Description>&#xD;
-        Crushftp is a robust file transfer server that makes it easy to setup secure connections with your users.
-        
-'Crush' comes from the built-in zip methods in CrushFTP. They allow for downloading files in compressed formats in-stream, or even automatically expanding zip files as they are received in-stream. This is called ZipStreaming and can greatly accelerate the transfer of many types of files.
-
-Secure management is web based allowing you the ability to manage and monitor the server from anywhere, or with almost any device. Easy in place server upgrades without complicated installers. Runs as a daemon, or Windows service with no need for a local GUI.
-
-CrushFTP is watching out for you by detecting common hack attempts and robots which scan for weak passwords. It will automatically protect you against DDoS attacks. No need for you to do anything as CrushFTP will automatically ban these IPs to prevent wasted logging and CPU usage. This keeps your server secure from unwanted abuse.
-
-User management includes inheritance, groups, and virtual file systems. If you want simple user management, it can be as easy as just making a folder with a specific name and nothing else. Think about how easily you can delegate user administration with CrushFTP's role based adminstration and event configuration.&#xD;
-    </Description>
+		CrushFTP9 is an extremely powerful, easy to use FTP solution that can use sftp, ftp, webDav, and http. &#xD;
+   </Description>
   <Networking>
   	<Mode>bridge</Mode>
     <Publish>
