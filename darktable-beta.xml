@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>darktable</Name>
-  <Repository>mdschaefer/darktable</Repository>
+  <Name>darktable-beta</Name>
+  <Repository>mdschaefer/darktable:beta</Repository>
   <Registry>https://hub.docker.com/repository/docker/mdschaefer/darktable</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support>https://www.darktable.org/</Support>
   <Project>https://github.com/mikeylikesrocks/unraid-darktable</Project>
   <Overview>&#xD;
