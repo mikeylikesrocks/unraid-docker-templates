@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>http://https://www.darktable.org/</Support>
+  <Support>https://www.darktable.org/</Support>
   <Project>https://github.com/mikeylikesrocks/unraid-darktable</Project>
   <Overview>&#xD;
         Darktable is an opensource image manager and editor.&#xD;
