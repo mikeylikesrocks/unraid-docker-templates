@@ -9,7 +9,7 @@
   <Support>https://www.darktable.org/</Support>
   <Project>https://github.com/mikeylikesrocks/darktable</Project>
   <Overview>&#xD;
-        Darktable is an opensource image manager and editor.&#xD;
+        Darktable is an open source photography workflow application and raw developer. A virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop raw images and enhance them.&#xD;
     </Overview>
   <Category>Productivity:Tools</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
